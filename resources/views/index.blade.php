@@ -5,51 +5,51 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0 user-scalable=no">
-	<link rel="stylesheet" href="{{asset('css/app.css')}}">
+	<link rel="stylesheet" href="{{asset('css/main.css')}}">
 </head>
 <body>
-	<div id="root"></div>
 	<div id="app">
-		<div class="app">
-			<header id="header" class="borderbox">
-				<hamburger></hamburger>
-			</header>
+    <div class="app">
+      <header id="header" class="borderbox">
+        <div id="hamburger"></div>
+      </header>
 
-			<div class="body-container borderbox" id="body-container">
-				<section>
-					<article id="slider">
-						<slider></slider>
-					</article>
+      <div class="body-container borderbox" id="body-container">
+        <section>
+          <article id="slider">
+            <div class="slider"></div>
+          </article>
 
-					<article id="detail">
-						<detail></detail>
-					</article>
+          <article id="detail">
+            <div id="detail"></div>
+          </article>
 
-					<article id="site">
-						<div class="container map borderbox">
-							<tab></tab>
+          <article id="site">
+            <div class="container map borderbox">
+              <div id="tab"></div>
 
-							<div class="right-box">
-								<gmapmap name="map"></gmapmap>
-							</div>
-						</div>
-					</article>
+              <div class="right-box">
+                <div id="gmapmap" name="map"></div>
+              </div>
+            </div>
+          </article>
 
-				</section>
-			</div>
+        </section>
+      </div>
 
-			<vuefooter></vuefooter>
-			<tree></tree>
-			<sun></sun>
-			<cloud></cloud>
-			
-		</div>
+      <footer class="vuefooter"></footer>
+      <div class="tree"></div>
+      <div class="sun"></div>
+      <div class="cloud"></div>
+      
+    </div>
 
-		<sidebar></sidebar>
-		<detailswiper></detailswiper>
+    <div id="sidebar"></div>
+    <div id="detailswiper"></div>
 
 
-	</div>
+  </div>
+
 
 
 	

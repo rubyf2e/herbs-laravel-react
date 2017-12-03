@@ -1,18 +1,34 @@
 .container.slide{
 	border-bottom: $global-line-border;
-	.swiper-container{
-		.swiper-slide{
+	.slick-dots{
+		bottom:0;
+		li{
+			margin: 0 auto;
+			float: none;
+			button{
+				&:before{
+					color: $background-color2;
+					opacity: 0.5;		
+				}
+
+			}
+
+			&.slick-active{
+				button{
+					&:before{
+						opacity: 1;
+					}
+				}
+			}
+		}
+		
+	}
+
+	.slick-list{
+		.slick-slide{
 			height:100vh;
 			background-size: cover;
 			background-repeat: no-repeat;
-		}
-
-		.swiper-pagination-bullet{
-			background: $background-color2;
-			opacity: 0.5;
-			&.swiper-pagination-bullet-active{
-				opacity: 1;
-			}
 		}
 	}
 

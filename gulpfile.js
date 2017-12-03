@@ -1,4 +1,4 @@
-var proxy       = 'http://localhost/herbs-laravel-react/public/';
+var proxy       = 'http://127.0.0.1:8000/';
 var gulp        = require('gulp');
 var imagemin    = require('gulp-imagemin');
 var browserSync = require('browser-sync').create();
